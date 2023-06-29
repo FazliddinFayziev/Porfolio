@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from "framer-motion";
 import { images } from "../../constants";
+import { AppWrap } from '../../wrapper';
 
 import "./Header.scss";
 
@@ -20,7 +21,7 @@ const neededImages = [images.flutter, images.redux, images.sass]
 
 const Header = () => {
     return (
-        <div id='home' className='app__header app__flex'>
+        <div className='app__header app__flex'>
             <motion.div
                 whileInView={{ x: [-100, 0], opacity: [0, 1] }}
                 transition={{ duration: 1 }}
@@ -75,4 +76,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default AppWrap(Header, 'home');
