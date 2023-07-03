@@ -16,7 +16,7 @@ const scaleVariants = {
     }
 }
 
-const neededImages = [images.flutter, images.redux, images.sass]
+const neededImages = [images.node, images.react, images.sass]
 
 
 const Header = () => {
@@ -32,14 +32,13 @@ const Header = () => {
                     <div className='badge-cmp app__flex'>
                         <span>👋</span>
                         <div style={{ marginLeft: 20 }}>
-                            <p className='p-text'>Hi, I am</p>
+                            <p className='p-text'>Hello, I am</p>
                             <h1 className='head-text'>Fazliddin</h1>
                         </div>
                     </div>
 
                     <div className='tag-cmp app__flex'>
-                        <p className='p-text'>Full stack Developer</p>
-                        <p className='p-text'>Mobile App Developer</p>
+                        <p className='p-text'>FULL STACK DEVELOPER</p>
                     </div>
                 </div>
 

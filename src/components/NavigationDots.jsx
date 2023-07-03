@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NavigationDots = ({ active }) => {
-    const links = ['home', 'about', 'work', 'skills', 'testimonial', 'contact',]
+    const links = ['home', 'about', 'work', 'education', 'skills', 'testimonial', 'contact',]
     return (
         <div className='app__navigation'>
             {links.map((item, index) => (
@@ -9,7 +9,7 @@ const NavigationDots = ({ active }) => {
                     href={`#${item}`}
                     key={item + index}
                     className='app__navigation-dot'
-                    style={active === item ? { backgroundColor: '#313BAC' } : {}}
+                    style={active === item ? { backgroundColor: '#29adff' } : {}}
                 />
             ))}
         </div>

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import "./Navbar.scss";
 import { images } from "../../constants";
-import { HiMenuAlt4, HiX } from "react-icons/hi";
+import { HiX } from "react-icons/hi";
+import { BiMenuAltRight } from "react-icons/bi";
 import { motion } from "framer-motion";
 
 
 const Navbar = () => {
-    const links = ['home', 'about', 'work', 'skills', 'testimonial', 'contact']
+    const links = ['home', 'about', 'work', 'education', 'skills', 'testimonial', 'contact']
     const [toggle, setToggle] = useState(false);
     return (
         <nav className='app__navbar'>
@@ -23,7 +24,7 @@ const Navbar = () => {
             </ul>
 
             <div className='app__navbar-menu'>
-                <HiMenuAlt4 onClick={() => setToggle(true)} />
+                <BiMenuAltRight onClick={() => setToggle(true)} />
 
                 {toggle && (
                     <motion.div

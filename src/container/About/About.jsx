@@ -19,11 +19,11 @@ const About = () => {
     return (
         <>
             <h2 className='head-text'>
-                Life is
-                <span> too short</span>
+                Cleaner
+                <span> code</span>
                 <br />
-                for
-                <span> debugging. </span>
+                cleaner
+                <span> life! </span>
             </h2>
 
             <div className='app__profiles'>
