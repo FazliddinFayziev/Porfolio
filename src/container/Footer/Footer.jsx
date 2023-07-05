@@ -18,35 +18,37 @@ const Footer = () => {
     };
 
     const handleSubmit = () => {
-        setLoading(true);
+        if (username !== "" && email !== "" && message !== "") {
+            setLoading(true);
 
-        const contact = {
-            _type: 'contact',
-            name: formData.username,
-            email: formData.email,
-            message: formData.message,
-        };
+            const contact = {
+                _type: 'contact',
+                name: formData.username,
+                email: formData.email,
+                message: formData.message,
+            };
 
-        client.create(contact)
-            .then(() => {
-                setLoading(false);
-                setIsFormSubmitted(true);
-            })
-            .catch((err) => console.log(err));
+            client.create(contact)
+                .then(() => {
+                    setLoading(false);
+                    setIsFormSubmitted(true);
+                })
+                .catch((err) => console.log(err));
+        }
     };
 
     return (
         <>
-            <h2 className="head-text">Take a coffee & chat with me</h2>
+            <h2 className="head-text">Feel free to contact me anytime</h2>
 
             <div className="app__footer-cards">
                 <div className="app__footer-card ">
                     <img src={images.email} alt="email" />
-                    <a href="mailto:hello@micael.com" className="p-text">hello@micael.com</a>
+                    <a href="mailto:fazrez4515@gmail.com" className="p-text">fazrez4515@gmail.com</a>
                 </div>
                 <div className="app__footer-card">
                     <img src={images.mobile} alt="phone" />
-                    <a href="tel:+1 (123) 456-7890" className="p-text">+1 (123) 456-7890</a>
+                    <a href="tel:+601113152704" className="p-text">+60 111 315 27 04</a>
                 </div>
             </div>
             {!isFormSubmitted ? (
