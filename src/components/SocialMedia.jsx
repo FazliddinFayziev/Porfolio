@@ -5,26 +5,26 @@ import { BiLogoTelegram } from "react-icons/bi";
 const SocialMedia = () => {
     return (
         <div className='app__social'>
-            <div>
-                <a href='https://www.linkedin.com/in/fazliddin-fayziev-6983a4260/'>
+            <a href='https://www.linkedin.com/in/fazliddin-fayziev-6983a4260/'>
+                <div>
                     <BsLinkedin />
-                </a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/fazliddin__fayziev/">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/fazliddin__fayziev/">
+                <div>
                     <BsInstagram />
-                </a>
-            </div>
-            <div>
-                <a href="https://t.me/javascript_console">
+                </div>
+            </a>
+            <a href="https://t.me/javascript_console">
+                <div>
                     <BiLogoTelegram />
-                </a>
-            </div>
-            <div>
-                <a href="https://github.com/FazliddinFayziev">
+                </div>
+            </a>
+            <a href="https://github.com/FazliddinFayziev">
+                <div>
                     <BsGithub />
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     )
 }

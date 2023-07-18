@@ -42,14 +42,14 @@ const Footer = () => {
             <h2 className="head-text">Feel free to contact me anytime</h2>
 
             <div className="app__footer-cards">
-                <div className="app__footer-card ">
+                <a href="mailto:fazrez4515@gmail.com" className="app__footer-card ">
                     <img src={images.email} alt="email" />
-                    <a href="mailto:fazrez4515@gmail.com" className="p-text">fazrez4515@gmail.com</a>
-                </div>
-                <div className="app__footer-card">
+                    <p className="p-text">fazrez4515@gmail.com</p>
+                </a>
+                <a href="tel:+601113152704" className="app__footer-card">
                     <img src={images.mobile} alt="phone" />
-                    <a href="tel:+601113152704" className="p-text">+60 111 315 27 04</a>
-                </div>
+                    <p className="p-text">+60 111 315 27 04</p>
+                </a>
             </div>
             {!isFormSubmitted ? (
                 <div className="app__footer-form app__flex">
